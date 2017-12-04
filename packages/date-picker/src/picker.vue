@@ -624,11 +624,12 @@ export default {
       if (keyCode === 27) {
         this.pickerVisible = false;
         event.stopPropagation();
+        console.log('esc');
         return;
       }
 
       // Tab
-      if (keyCode === 9) {
+      /*if (keyCode === 9) {
         if (!this.ranged) {
           this.handleChange();
           this.pickerVisible = this.picker.visible = false;
@@ -645,7 +646,7 @@ export default {
           }, 0);
         }
         return;
-      }
+      }*/
 
       // Enter
       if (keyCode === 13 && this.displayValue) {
